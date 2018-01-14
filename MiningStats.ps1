@@ -11,7 +11,7 @@ function Get-AntMinerStats {
     foreach ($miner in $ComputerName) {
 
         # first check to see if miner is online... core does not yet have Test-Connection so go with ping
-        Remove-Variable ping
+        Remove-Variable ping -ErrorAction SilentlyContinue
         $ping = ping $miner -c 1
         if($ping){
             $StringData = (echo '{"command":"stats"}' | nc $miner $port).split(",").replace(":","=").replace('"','') | ConvertFrom-StringData

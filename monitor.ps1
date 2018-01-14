@@ -15,7 +15,7 @@ function Get-MiningResults {
         "ltcApiKey":  "my-api-key"
         }
     #>
-    $keys = Get-Content keys.json | ConvertFrom-Json
+    $keys = Get-Content ../keys.json | ConvertFrom-Json
 
     $nh = Get-NiceHashResults -Address $keys.nhAddr | Select-Object -ExpandProperty result | Select-Object -ExpandProperty stats | Where-Object algo -eq 1
     $ltc = Get-LiteCoinResults -Key $keys.ltcApiKey | Select-Object -ExpandProperty user
