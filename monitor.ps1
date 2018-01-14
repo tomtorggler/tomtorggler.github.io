@@ -1,4 +1,5 @@
 # pull latest changes
+cd tomtorggler.github.io
 git pull
 
 # dot source the functions 
