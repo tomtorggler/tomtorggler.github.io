@@ -33,8 +33,8 @@ function Get-MiningResults {
 }
 
 # Get Information from the API
-$s9stats = Get-AntMinerStats -ComputerName s91,s92 -Type S9
-$l3stats = Get-AntMinerStats -ComputerName l31,l32 -Type l3
+$s9stats = Get-AntMinerStats -ComputerName s93,s91,s92 -Type S9
+$l3stats = Get-AntMinerStats -ComputerName l31,l33,l32 -Type l3
 
 # Create output html tables 
 $out = $l3stats | Select-Object Host,Uptime,HashRate,'T. max',Fan*,'ASIC'
