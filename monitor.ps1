@@ -56,7 +56,7 @@ $hardwareTable = $outHw | ConvertTo-Html -Fragment
 $asicTable = $outAsic | ConvertTo-Html -Fragment -As List 
 
 # write html to file
-$index = ConvertTo-Html -Head "<meta http-equiv='refresh' content='900'>" -CssUri "style.css" -Body "<h1>Mining Statistics</h1> $unpaidTable $mainTable <a href='hw.html'>Hardware</a>" -Title "Mining Statistics" -PostContent "<footer>Updated: $(get-date) by <a href='https://twitter.com/torggler' target='_blank'>@torggler</a></footer>" 
+$index = ConvertTo-Html -Head "<meta http-equiv='refresh' content='900'>" -CssUri "style.css" -Body "<a href='index.html'><h1>Mining Statistics</h1> $unpaidTable $mainTable <a href='hw.html'>Hardware</a>" -Title "Mining Statistics" -PostContent "<footer>Updated: $(get-date) by <a href='https://twitter.com/torggler' target='_blank'>@torggler</a></footer>" 
 $index | Set-Content tomtorggler.github.io/index.html
 
 $hardware = ConvertTo-Html -CssUri "style.css" -Body "<a href='index.html'><h1>Mining Statistics</h1></a> <h2>Temperature Detail</h2> $tempTable <h2>ASIC Errors</h2> $hardwareTable <h2>ASIC Status</h2> $asicTable" -Title "Mining Statistics" -PostContent "<footer>Updated: $(get-date) <a href='index.html'>back</a></footer>" 
