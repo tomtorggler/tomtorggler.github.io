@@ -79,6 +79,7 @@ function Get-M01Stats {
 }
 
 function Get-NiceHashResults {
+    [cmdletbinding()]
     param(
         $Address
     )
@@ -87,6 +88,7 @@ function Get-NiceHashResults {
 }
 
 function Get-LiteCoinResults {
+    [cmdletbinding()]
     param(
         $Key
     )
@@ -95,6 +97,7 @@ function Get-LiteCoinResults {
 }
 
 function Get-SupportXmrResults {
+    [cmdletbinding()]
     param (
         $Address
     )
@@ -105,6 +108,7 @@ function Get-SupportXmrResults {
 }
 
 function Get-BitcoinComResults {
+    [cmdletbinding()]
     param(
         $Key
     )
