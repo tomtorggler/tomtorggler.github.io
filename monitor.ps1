@@ -57,18 +57,33 @@ $hardwareTable = $outHw | ConvertTo-Html -Fragment
 $asicTable = $outAsic | ConvertTo-Html -Fragment -As List 
 
 # write html to file
-$index = ConvertTo-Html -Head "<meta http-equiv='refresh' content='900'>" -CssUri "style.css" -Body "<a href='index.html'><h1>Mining Statistics</h1></a> $unpaidTable $mainTable <a href='hw.html'>Hardware</a>" -Title "Mining Statistics" -PostContent "<footer>Updated: $(get-date) by <a href='https://twitter.com/torggler' target='_blank'>@torggler</a></footer>" 
-$index | Set-Content index.html
+$index = ConvertTo-Html -Body "$unpaidTable $mainTable"
+@"
+---
+layout: default
+title: Mining Statistics
+date: $(get-date -Format "yyyy-MM-dd HH:mm:ss")
+---
 
-$hardware = ConvertTo-Html -CssUri "style.css" -Body "<a href='index.html'><h1>Mining Statistics</h1></a> <h2>Temperature Detail</h2> $tempTable <h2>ASIC Errors</h2> $hardwareTable <h2>ASIC Status</h2> $asicTable" -Title "Mining Statistics" -PostContent "<footer>Updated: $(get-date) <a href='index.html'>back</a></footer>" 
-$hardware | Set-Content hw.html
+"@ | Set-Content -Path index.html
+$index | Add-Content index.html
+
+$hardware = ConvertTo-Html -Body "<h2>Temperature Detail</h2> $tempTable <h2>ASIC Errors</h2> $hardwareTable <h2>ASIC Status</h2> $asicTable"  
+@"
+---
+layout: default
+title: Hardware Details
+date: $(get-date -Format "yyyy-MM-dd HH:mm:ss")
+permalink: /hw/
+---
+
+"@ | Set-Content hw.html
+$hardware | Add-Content hw.html
+
 
 # commit and push to github
 git add .
 git commit -m "updates index"
 git push
 
-
-
-
-
+#"<meta http-equiv='refresh' content='900'>"
