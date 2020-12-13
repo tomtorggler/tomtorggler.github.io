@@ -28,6 +28,7 @@ html {
 
 .topnav {
     top: 0;
+    left: 0;
     background-color: var(--global-background);
     position: fixed;
     overflow: hidden;
@@ -48,29 +49,40 @@ html {
     color: var(--global-background);
     background-color: var(--global-foreground);
 }
-  
+
+.centerwrapper {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
 .container {
     padding: 10px;
-    position: absolute;
     margin-top: 75px;
+    display: block;
 }
 
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 90%;
-    }
-}
-@media only screen and (min-width: 600px) {
-    .container {
-        width: 80%;
-        margin-left: 10%;
+@media screen and (min-width: 576px) {
+    .centerwrapper {
+        max-width: 95%;
     }
 }
 
-@media only screen and (min-width: 900px) {
-    .container {
-        width: 70%;
-        margin-left: 15%;
+@media screen and (min-width: 768px) {
+    .centerwrapper {
+        max-width: 85%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .centerwrapper {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .centerwrapper {
+        max-width: 924px;
     }
 }
 
@@ -97,7 +109,8 @@ button {
     cursor: pointer;
 }
 
-.wrapper {
+.themewrapper {
     float: right;
     padding: 10px;
 }
+
