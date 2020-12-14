@@ -24,6 +24,7 @@ html {
         color: var(--accent-color);
     }
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 2em;
 }
 
 .topnav {
@@ -41,6 +42,8 @@ html {
     padding: 10px;
     display: block;
     float: left;
+    color: var(--global-foreground);
+    background-color: var(--global-background);
 }
 
 .topnav a:hover {
@@ -84,9 +87,12 @@ html {
     }
 }
 
-.postlist a {
+.postlist a, h2 {
+    color: var(--global-foreground);
+    background-color: var(--global-background);
+    font-size: large;
+    font-weight: normal;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .postlist a:hover {
@@ -110,3 +116,8 @@ button {
 .navwrapper {
     float: left;
 }
+
+.post-meta {
+    font-family: monospace;
+}
+
