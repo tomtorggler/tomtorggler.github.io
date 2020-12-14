@@ -22,7 +22,7 @@ const checkForSavedTheme = () => {
 
 themeButtons.forEach((button) => {
   const theme = button.dataset.setTheme;
-
+  
   button.addEventListener('click', () => {
     html.dataset.theme = theme;
     saveTheme(theme);
@@ -31,3 +31,4 @@ themeButtons.forEach((button) => {
 
 
 checkForSavedTheme();
+
