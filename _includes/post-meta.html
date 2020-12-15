@@ -1,18 +1,18 @@
 <p class="post-meta">
     {% if post.date %}
         <span itemprop="datePublished" intemscope itemtype="http://schema.org/BlogPosting">
-        <time datetime="{{ post.date | date: "%b %-d, %Y" }}" itemprop="datePublished">Published: {{ post.date | date: "%-d %b %Y" }} &thinsp; </time></span>
+        <time datetime="{{ post.date | date: "%b %-d, %Y" }}" itemprop="datePublished">{{ post.date | date: "%-d %b %Y" }}</time></span>
     {% else %}
         <span itemprop="datePublished" intemscope itemtype="http://schema.org/BlogPosting">
-        <time datetime="{{ page.date | date: "%b %-d, %Y" }}" itemprop="datePublished">Published: {{ page.date | date: "%-d %b %Y" }} &thinsp; </time></span>
+        <time datetime="{{ page.date | date: "%b %-d, %Y" }}" itemprop="datePublished">Published: {{ page.date | date: "%-d %b %Y" }}</time></span>
     {% endif %}
         <span itemprop="author" itemscope itemtype="http://schema.org/BlogPosting">
             {% if post.author %}
-                <span itemprop="author">Author: {{ post.author }}</span>
+                <span itemprop="author"> · {{ post.author }}</span>
             {% else %}
                 Author: <a href="{{ site.baseurl }}/{{ page.author | url_escape }}/"><span itemprop="author">{{ page.author }}</span></a>
             {% endif %}
-        </span>&thinsp;
+        </span>
     {% if page.tags %}
         <span itemprop="category" itemscope itemtype="http://schema.org/BlogPosting">
             <span itemprop="keywords">
@@ -24,6 +24,6 @@
     {% endif %}
     {% if post.updated %}
         <span class="post-updated" itemprop="dateModified" intemscope itemtype="http://schema.org/BlogPosting">
-        <time datetime="{{ post.updated | date: "%b %-d, %Y" }}" itemprop="dateModified">updated: {{ post.updated | date: "%-d %b %Y" }} </time></span>    
+        <time datetime="{{ post.updated | date: "%b %-d, %Y" }}" itemprop="dateModified"> · {{ post.updated | date: "%-d %b %Y" }} </time></span>    
     {% endif %}
 </p>

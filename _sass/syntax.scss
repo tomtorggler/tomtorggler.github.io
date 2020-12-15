@@ -1,5 +1,9 @@
+
+.highlight  { 
+    overflow-x: auto; 
+    @extend %vertical-rhythm;
+}
 .highlight .hll { background-color: #404040 }
-.highlight  { background: #505050; color: #e0e0e0; overflow-x: auto; }
 .highlight .c { color: #e0e0e0; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .esc { color: #e0e0e0 } /* Escape */
