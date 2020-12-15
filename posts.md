@@ -9,7 +9,7 @@ title: Posts
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         {%- include post-meta.html -%}
         {{ post.excerpt }}
-        <p style="text-align: center">&nbsp; · &nbsp; · &nbsp; · &nbsp;</p>
+        <p style="text-align: center">-</p>
     </div>
 {%- endfor -%}
 </div>
