@@ -39,11 +39,13 @@ html {
     top: 0;
     left: 0;
     background-color: var(--global-background);
-    position: fixed;
+    position: sticky;
     overflow: hidden;
     width: 100%;
     z-index: 1;
 }
+
+
 
 .topnav a {
     text-decoration: none;
@@ -138,3 +140,19 @@ svg {
 }
 
 
+
+.gridcontainer {
+    margin-top: 75px;
+    @include display-grid;
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+}
+
+.borderl {
+    border: 1px solid var(--global-foreground);
+    border-radius: 3px;
+    padding: 1em;
+}
