@@ -12,7 +12,6 @@ self.addEventListener("install", function (event) {
         [
           '/',
           '/index.html',
-          '/404',
           '/offline',
           '/assets/main.css',
           '/assets/theme.js',
@@ -51,7 +50,7 @@ function fromCache(request) {
   // If not in the cache, return offline page
   return caches.open(CACHE).then(function (cache) {
     return cache.match(request).then(function (matching) {
-      if (!matching || matching.status === 404) {
+      if (!matching) {
         // no match serve default doc
         return caches.match('/offline');
       }
