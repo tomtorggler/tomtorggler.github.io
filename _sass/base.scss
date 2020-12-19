@@ -1,6 +1,6 @@
 :root {
-    --global-foreground: #f1f1f1;
-    --global-background: #0f0f0f;
+    --global-foreground: #f3f3f3;
+    --global-background: #0a0a0a;
     --accent-color: #d0adf0;
 }
 
@@ -73,12 +73,18 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+    html {
+        font-size: 22px;
+    }
     .centerwrapper {
         max-width: 85%;
     }
 }
 
 @media screen and (min-width: 1100px) {
+    html {
+        font-size: 24px;
+    }
     .centerwrapper {
         max-width: 924px;
     }
@@ -87,7 +93,7 @@ html {
 .postlist a, h2 {
     color: var(--global-foreground);
     background-color: var(--global-background);
-    font-weight: normal;
+    font-family: SourceSerifPro, sans-serif;
     text-decoration: none;
 }
 
@@ -121,7 +127,7 @@ svg {
 }
 
 .post-meta {
-    font-family: monospace;
+    font-family: SourceCodePro, monospace;
     font-size: $small-font-size;
 }
 
