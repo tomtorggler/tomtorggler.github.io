@@ -28,6 +28,7 @@ language: en
 twitter_username: torggler
 github_username:  tomtorggler
 
+permalink: /post/:title
 highlighter: rouge
 markdown: kramdown
 kramdown:
