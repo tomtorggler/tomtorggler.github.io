@@ -1,6 +1,7 @@
 ---
 title: PowerShell.
 layout: page
+permalink: /powershell
 ---
 
 # Modules.
