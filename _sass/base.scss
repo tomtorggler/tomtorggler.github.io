@@ -59,6 +59,11 @@ html {
     background-color: var(--global-foreground);
 }
 
+.topnav a.active {
+    color: var(--global-background);
+    background-color: var(--global-foreground);
+}
+
 .centerwrapper {
     margin-right: auto;
     margin-left: auto;
@@ -90,7 +95,7 @@ html {
     }
 }
 
-.postlist a, h2 {
+.postlist a, h1 {
     color: var(--global-foreground);
     background-color: var(--global-background);
     font-family: SourceSerifPro, sans-serif;
@@ -132,12 +137,12 @@ svg {
 }
 
 .gridcontainer {
-    margin-top: 75px;
+    margin-top: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 2;
     @include display-grid;
-
-    @media screen and (min-width: 1100px) {
-        grid-template-columns: repeat(2, 1fr);
     
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

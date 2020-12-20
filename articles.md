@@ -6,7 +6,7 @@ title: Posts.
 <div class="postlist">
 {%- for post in site.posts -%}
     <div class="item">
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
         {%- include post-meta.html -%}
         {{ post.excerpt }}
         <p style="text-align: center"> · </p>

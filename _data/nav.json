@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Home",
+        "url": "/"
+    },{
+        "title": "Articles",
+        "url": "/articles"
+    },{
+        "title": "PowerShell",
+        "url": "/PowerShell"
+    }
+]

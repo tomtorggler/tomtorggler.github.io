@@ -1,9 +1,14 @@
 <div class="topnav">
   <div class="centerwrapper">
     <div class="navwrapper">
-      <a href="/">Home</a>
-      <a href="/posts">Posts</a>
-      <a href="/about">About</a>
+      {%- for item in site.data.nav -%}
+      {% if item.url == page.url %}
+        {% assign current = ' class="active"' %}
+      {% else %}
+        {% assign current = null %}
+      {% endif %}
+      <a{{ current }} href="{{item.url}}">{{item.title}}</a>
+      {%- endfor -%}
     </div>
     <div class="themewrapper">
       <button data-set-theme="light" aria-label="Set light theme">
@@ -20,3 +25,5 @@
     </div>
   </div>
 </div>
+
+
