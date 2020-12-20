@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: ntSystemsPSDrive
 author: tto
 redirect_from: ["/ntsystemspsdrive"]
@@ -19,11 +19,8 @@ Get-ChildItem 'ntSystems:\Posts by Category\PowerShell\' | Select-Object -Proper
 Get-Content 'ntSystems:\Posts by Category\ntSystems\Jekyll Fun: Consuming ntSystems with PowerShell' 
 ```
 
-
 You can read more about it [here]({{ "/post/ntsystemspsdrive-a-ships-drive-for-the-blog" | prepend: site.baseurl }}).
 
+{% include module-functions.html %}
 
-# Functions
-
-
-{% include psgallery.html packagename="ntSystemsPSDrive" type="Module" reponame="ntSystemsPSDrive" %}
+{% include psgallery.html packagename="TAK" type="Module" reponame="TAK" %}

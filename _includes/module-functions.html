@@ -1,0 +1,10 @@
+# Functions
+
+{%- for post in site.OnlineHelp -%}
+{% if post.module_name == page.title %}
+<div class="postlist">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    {{ include post-meta.html }}
+</div>
+{%- endif -%}
+{%- endfor -%}

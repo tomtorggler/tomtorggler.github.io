@@ -3,4 +3,6 @@ layout: page
 title: Home.
 ---
 
-Welcome! This is my playground.
+# Welcome! 
+
+This is my playground.

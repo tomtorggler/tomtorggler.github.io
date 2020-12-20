@@ -3,10 +3,10 @@
         "title": "Home",
         "url": "/"
     },{
-        "title": "Articles",
-        "url": "/articles"
+        "title": "Posts",
+        "url": "/post"
     },{
         "title": "PowerShell",
-        "url": "/PowerShell"
+        "url": "/powershell"
     }
 ]

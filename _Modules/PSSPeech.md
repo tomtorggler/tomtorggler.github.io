@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: PSSpeech
 author: tto
 redirect_from: ["/psspeech"]
@@ -14,8 +14,6 @@ Get-SpeechToken -Key <yourkey> | Save-SpeechToken
 Convert-TextToSpeech -Text "Hi there, how are you doing today?" -Path hithere.mp3
 ```
 
+{% include module-functions.html %}
 
-# Functions
-
-
-{% include psgallery.html packagename="PSSpeech" type="Module" reponame="PSSpeech" %}
+{% include psgallery.html packagename="TAK" type="Module" reponame="TAK" %}

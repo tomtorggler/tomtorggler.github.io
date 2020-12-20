@@ -1,8 +1,10 @@
 <div class="topnav">
   <div class="centerwrapper">
     <div class="navwrapper">
+      {% assign url = page.url | split: "/" %}
+      {% assign pageurl = url[1] | prepend: "/" %}
       {%- for item in site.data.nav -%}
-      {% if item.url == page.url %}
+      {% if item.url == pageurl %}
         {% assign current = ' class="active"' %}
       {% else %}
         {% assign current = null %}
