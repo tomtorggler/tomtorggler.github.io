@@ -1,7 +1,6 @@
 ---
 title: PowerShell.
 layout: pagewt
-permalink: /powershell
 ---
 
 # Modules.
