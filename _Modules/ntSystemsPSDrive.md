@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: ntSystemsPSDrive
 author: tto
 redirect_from: ["/ntsystemspsdrive"]

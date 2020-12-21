@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: TAK
 author: tto
 redirect_from: ["/tak"]

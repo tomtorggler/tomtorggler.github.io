@@ -16,7 +16,7 @@ self.addEventListener("install", function (event) {
           '/assets/main.css',
           '/assets/theme.js',
           '/about',
-          '/posts'
+          '/post'
         ]
       );
     })

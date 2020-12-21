@@ -53,15 +53,15 @@ defaults:
 collections:
   Scripts:
     output: true
-    permalink: "/powershell/:title/"
+    permalink: "/PowerShell/:title/"
     excerpt_separator: <!-- more -->
   Modules:
     output: true
-    permalink: "/powershell/:title/"
+    permalink: "/PowerShell/:title/"
     excerpt_separator: <!-- more -->
   OnlineHelp:
     output: true
-    permalink: "/powershell/:categories/:title/"
+    permalink: "/PowerShell/:title/"
     excerpt_separator: <!-- more -->
 
 # Exclude from processing.

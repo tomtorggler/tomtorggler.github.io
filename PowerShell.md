@@ -1,6 +1,6 @@
 ---
 title: PowerShell.
-layout: page
+layout: pagewt
 permalink: /powershell
 ---
 
@@ -10,7 +10,6 @@ permalink: /powershell
     {%- for post in site.Modules -%}
     <div class="postlist borderl">
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        {%- include post-meta.html -%}
         {{ post.excerpt }}
     </div>
     {%- endfor -%}
@@ -22,7 +21,6 @@ permalink: /powershell
     {%- for post in site.Scripts -%}
     <div class="postlist borderl">
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-        {%- include post-meta.html -%}
         {{ post.excerpt }}
     </div>
     {%- endfor -%}

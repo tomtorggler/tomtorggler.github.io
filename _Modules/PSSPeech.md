@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: PSSpeech
 author: tto
 redirect_from: ["/psspeech"]

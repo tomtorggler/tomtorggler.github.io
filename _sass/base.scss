@@ -60,8 +60,7 @@ html {
 }
 
 .topnav a.active {
-    color: var(--global-background);
-    background-color: var(--global-foreground);
+    text-decoration: underline;
 }
 
 .centerwrapper {
@@ -98,7 +97,7 @@ html {
 .postlist a, h1 {
     color: var(--global-foreground);
     background-color: var(--global-background);
-    font-family: SourceSerifPro, sans-serif;
+    font-family: 'Source Serif Pro', serif;
     text-decoration: none;
 }
 
