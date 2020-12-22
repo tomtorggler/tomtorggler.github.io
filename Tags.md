@@ -11,14 +11,10 @@ layout: grid
     {% endif %}
 {% endfor %}
 
-
 {%- for i in (1..tags_max) reversed -%}
 {%- for tag in site.tags -%}
 {% if tag[1].size == i %}
-<div class="postlist borderl">
-    <h2><a href="{{ site.baseurl }}/Tags/{{ tag[0]}}">#{{ tag[0] }}</a></h2>
-    <p class="post-meta">Posts: {{i}}</p>
-</div>
+<p class="borderl"><a href="{{ site.baseurl }}/Tags/{{ tag[0]}}">#{{ tag[0] }}</a> <span style="float: right">{{ i }}</span></p>
 {% endif %}
 {%- endfor -%}
 {%- endfor -%}

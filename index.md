@@ -3,5 +3,37 @@ layout: page
 title: Home.
 ---
 
-Welcome. 
+Welcome. This is my personal website.
 
+# Tags.
+
+You can browse our tags:
+
+{% assign tags_max = 0 %}
+{% for tag in site.tags %}
+    {% if tag[1].size > tags_max %}
+    {% assign tags_max = tag[1].size %}
+    {% endif %}
+{% endfor %}
+
+<ul class="tagscontainer">
+{%- for i in (1..tags_max) reversed -%}
+{%- for tag in site.tags -%}
+{% if tag[1].size == i %}
+<li class="tagslist"><a href="{{ site.baseurl }}/Tags/{{ tag[0]}}">#{{ tag[0] }}</a><span class="tagnumber">{{ i }}</span></li>
+{% endif %}
+{%- endfor -%}
+{%- endfor -%}
+</ul>
+
+
+
+# Recent Posts.
+
+<div class="postlist">
+{% for post in site.posts limit:3 %}
+<h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+{%- include post-meta.html -%}
+{{ post.excerpt }}
+{% endfor %}
+</div>

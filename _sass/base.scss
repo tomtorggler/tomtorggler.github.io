@@ -145,14 +145,12 @@ svg {
     }
 }
 
-.tagcontainer {
+.tagscontainer {
     margin-top: $spacing-unit / 2;
     margin-bottom: $spacing-unit / 2;
-    @include display-grid;
-    
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
-    @media screen and (min-width: 940px) {
+    @media screen and (min-width: 768px) {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -161,4 +159,14 @@ svg {
     border: 1px solid var(--global-foreground);
     border-radius: 3px;
     padding: 1em;
+}
+
+.tagslist {
+    list-style: none;
+}
+
+.tagnumber{
+    font-family: "SourceCodePro", monospace;
+    margin-right: 2em;
+    float: right;
 }
