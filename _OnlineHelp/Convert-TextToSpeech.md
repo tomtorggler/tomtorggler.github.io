@@ -1,77 +1,75 @@
 ---
 author: tto
-category: TAK
-date: 2020-12-21
-excerpt: '
-Enable-InternetProxy [[-ProxyServer] <string>] [[-AutoConfigUrl] <string>] [-WhatIf] [-Confirm] [<CommonParameters>]
-'
-external help file: tak-help.xml
+category: PSSpeech
+date: 2020-12-22
+excerpt: 'Convert a string to audio using Azure Cognitive Services.'
+external help file: psspeech-help.xml
 layout: post
-Module Name: TAK
+Module Name: PSSpeech
 online version:
 schema: 2.0.0
 tags: OnlineHelp PowerShell
-title: Enable-InternetProxy
+title: Convert-TextToSpeech
 ---
 
-# Enable-InternetProxy
+# Convert-TextToSpeech
 
 ## SYNOPSIS
-{{ Fill in the Synopsis }}
+Convert a string to audio using Azure Cognitive Services.
 
 ## SYNTAX
 
 ```
-Enable-InternetProxy [[-ProxyServer] <String>] [[-AutoConfigUrl] <String>] [-WhatIf] [-Confirm]
+Convert-TextToSpeech [-Text] <String> [-Path] <FileInfo> [[-Voice] <String>] [[-OutputFormat] <String>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-{{ Fill in the Description }}
+This function uses Invoke-RestMethod to call the Azure Cognitive Service Speech Service API, convert a string to speech, and save the resulting audio to a file.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
+```
+Convert-TextToSpeech -Text "Hi, this is a test." -Path test.mp3
 ```
 
-{{ Add example description here }}
+This example converts the string "Hi, this is a test." to speech and saves the audio to the test.mp3 file.
 
 ## PARAMETERS
 
-### -AutoConfigUrl
-{{ Fill AutoConfigUrl Description }}
+### -Text
+{{ Fill Text Description }}
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases:
 
-Required: False
+Required: True
 Position: 1
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Path
+{{ Fill Path Description }}
 
 ```yaml
-Type: SwitchParameter
+Type: FileInfo
 Parameter Sets: (All)
-Aliases: cf
+Aliases:
 
-Required: False
-Position: Named
+Required: True
+Position: 2
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ProxyServer
-{{ Fill ProxyServer Description }}
+### -Voice
+{{ Fill Voice Description }}
 
 ```yaml
 Type: String
@@ -79,24 +77,23 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 0
-Default value: None
+Position: 3
+Default value: En-GB-LibbyNeural
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -OutputFormat
+{{ Fill OutputFormat Description }}
 
 ```yaml
-Type: SwitchParameter
+Type: String
 Parameter Sets: (All)
-Aliases: wi
+Aliases:
 
 Required: False
-Position: Named
-Default value: None
+Position: 4
+Default value: Audio-16khz-32kbitrate-mono-mp3
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -106,11 +103,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### None
-
+### None.
 ## OUTPUTS
 
-### System.Object
+### None.
 ## NOTES
 
 ## RELATED LINKS

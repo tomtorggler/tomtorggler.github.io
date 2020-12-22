@@ -1,7 +1,7 @@
 ---
 author: tto
 category: TAK
-date: 2020-12-21
+date: 2020-12-22
 excerpt: 'Get DKIM Record for a domain.'
 external help file: tak-help.xml
 layout: post
@@ -66,7 +66,7 @@ Aliases:
 
 Required: False
 Position: 2
-Default value: Selector1
+Default value: @("selector1","selector2")
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

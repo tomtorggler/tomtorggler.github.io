@@ -1,20 +1,20 @@
 ---
 author: tto
-category: TAK
-date: 2020-12-21
+category: PSSpeech
+date: 2020-12-22
 excerpt: '
-Get-EKeyUsage [[-InputObject] <Object>]
+Get-SpeechTokenResult 
 '
-external help file: tak-help.xml
+external help file: psspeech-help.xml
 layout: post
-Module Name: TAK
+Module Name: PSSpeech
 online version:
 schema: 2.0.0
 tags: OnlineHelp PowerShell
-title: Get-EKeyUsage
+title: Get-SpeechTokenResult
 ---
 
-# Get-EKeyUsage
+# Get-SpeechTokenResult
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -22,7 +22,7 @@ title: Get-EKeyUsage
 ## SYNTAX
 
 ```
-Get-EKeyUsage [[-InputObject] <Object>]
+Get-SpeechTokenResult
 ```
 
 ## DESCRIPTION
@@ -38,21 +38,6 @@ PS C:\> {{ Add example code here }}
 {{ Add example description here }}
 
 ## PARAMETERS
-
-### -InputObject
-{{ Fill InputObject Description }}
-
-```yaml
-Type: Object
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: 0
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ## INPUTS
 

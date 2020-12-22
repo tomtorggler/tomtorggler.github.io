@@ -1,8 +1,8 @@
 ---
 author: tto
 category: TAK
-date: 2020-12-21
-excerpt: 'Convert Base64 to ClearText String'
+date: 2020-12-22
+excerpt: 'Convert Base64 to ClearText String.'
 external help file: tak-help.xml
 layout: post
 Module Name: TAK
@@ -15,7 +15,7 @@ title: ConvertFrom-Base64
 # ConvertFrom-Base64
 
 ## SYNOPSIS
-Convert Base64 to ClearText String
+Convert Base64 to ClearText String.
 
 ## SYNTAX
 

@@ -1,7 +1,7 @@
 ---
 author: tto
 category: TAK
-date: 2020-12-21
+date: 2020-12-22
 excerpt: 'Import DHCP Server Log files.'
 external help file: tak-help.xml
 layout: post
@@ -20,7 +20,8 @@ Import DHCP Server Log files.
 ## SYNTAX
 
 ```
-Import-DhcpServerLog [[-Path] <Object>] [[-Filter] <Object>] [[-ComputerName] <Object>] [<CommonParameters>]
+Import-DhcpServerLog [[-Path] <Object>] [[-Filter] <Object>] [[-ComputerName] <Object>] [-Latest]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -77,6 +78,21 @@ Aliases:
 Required: False
 Position: 3
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Latest
+{{ Fill Latest Description }}
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -38,17 +38,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-seo
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      excerpt_separator: <!-- more -->
-      hidden: false
-      language: en
-
-
+  - jekyll-redirect-from
 
 collections:
   Scripts:
@@ -63,6 +53,26 @@ collections:
     output: true
     permalink: "/PowerShell/:title/"
     excerpt_separator: <!-- more -->
+  my_tags:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      excerpt_separator: <!-- more -->
+      hidden: false
+      language: en
+  -
+    scope:
+      path: ""
+      type: "my_tags"
+    values:
+      permalink: "/Tags/:title"
+      layout: "tags"
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

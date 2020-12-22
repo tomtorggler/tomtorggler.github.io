@@ -32,7 +32,9 @@ foreach ($cmdlet in (Get-Command -Module TAK)) {
         'excerpt' = "'$($h.Synopsis)'";
         'date' = $(Get-Date -Format yyyy-MM-dd);
     }
-    New-MarkdownHelp -Command $cmdlet -OutputFolder tak-md-help -Metadata $meta -Force 
+    if($h.Synopsis -notmatch "\[|\]") {
+        New-MarkdownHelp -Command $cmdlet -OutputFolder tak-md-help -Metadata $meta -Force 
+    }
 }
 ```
 The above example creates a `.md` help file for every function in the `TAK` module. The files are almost ready to be used by our Jekyll-powered blog, I'm using the `-Metadata` parameter to add some additional information to the 'front matter' of each file.

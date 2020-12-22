@@ -1,8 +1,8 @@
 ---
 author: tto
 category: TAK
-date: 2020-12-21
-excerpt: 'Edit \etc\hosts file with notepad.'
+date: 2020-12-22
+excerpt: 'Edit /etc/hosts file with notepad.'
 external help file: tak-help.xml
 layout: post
 Module Name: TAK
@@ -15,7 +15,7 @@ title: Edit-EtcHosts
 # Edit-EtcHosts
 
 ## SYNOPSIS
-Edit \etc\hosts file with notepad.
+Edit /etc/hosts file with notepad.
 
 ## SYNTAX
 

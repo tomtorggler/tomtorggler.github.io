@@ -1,7 +1,7 @@
 ---
 author: tto
 category: TAK
-date: 2020-12-21
+date: 2020-12-22
 excerpt: 'Add an entry to local hosts file.'
 external help file: tak-help.xml
 layout: post

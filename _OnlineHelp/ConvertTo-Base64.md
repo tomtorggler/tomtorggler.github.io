@@ -1,8 +1,8 @@
 ---
 author: tto
 category: TAK
-date: 2020-12-21
-excerpt: 'Convert a String to Base64'
+date: 2020-12-22
+excerpt: 'Convert a String to Base64.'
 external help file: tak-help.xml
 layout: post
 Module Name: TAK
@@ -15,7 +15,7 @@ title: ConvertTo-Base64
 # ConvertTo-Base64
 
 ## SYNOPSIS
-Convert a String to Base64
+Convert a String to Base64.
 
 ## SYNTAX
 

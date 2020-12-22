@@ -1,7 +1,7 @@
 ---
 author: tto
 category: TAK
-date: 2020-12-21
+date: 2020-12-22
 excerpt: 'Get MX Records for a domain.'
 external help file: tak-help.xml
 layout: post
@@ -39,12 +39,11 @@ This example gets the MX record for the domain ntsystems.it.
 
 ### -Domain
 Specify the Domain name for the query.
-Specify the DNS server to query.
 
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: DomainName
 
 Required: True
 Position: 1
@@ -54,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -Server
-{{ Fill Server Description }}
+Specify the DNS server to query.
 
 ```yaml
 Type: IPAddress
@@ -69,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResolvePTR
-{{ Fill ResolvePTR Description }}
+Also resolve PTR
 
 ```yaml
 Type: SwitchParameter

@@ -1,7 +1,7 @@
 ---
 author: tto
 category: TAK
-date: 2020-12-21
+date: 2020-12-22
 excerpt: 'Get SPF Record for a domain. If the include tag is present, recursively get that SPF Record, too.'
 external help file: tak-help.xml
 layout: post

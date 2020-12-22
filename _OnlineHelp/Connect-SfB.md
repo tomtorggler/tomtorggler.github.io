@@ -1,7 +1,7 @@
 ---
 author: tto
 category: TAK
-date: 2020-12-21
+date: 2020-12-22
 excerpt: 'Connect to Skype for Business Server or Online.'
 external help file: tak-help.xml
 layout: post
@@ -21,14 +21,13 @@ Connect to Skype for Business Server or Online.
 
 ### Server
 ```
-Connect-SfB [-Server] <Object> [[-Credential] <PSCredential>] [-Timeout <Int32>] [-ProxyType <ProxyAccessType>]
+Connect-SfB -Server <Object> [-Credential <PSCredential>] [-Timeout <Int32>] [-ProxyType <ProxyAccessType>]
  [<CommonParameters>]
 ```
 
 ### Online
 ```
-Connect-SfB [-Online] [-AdminDomain <String>] [-Timeout <Int32>] [-ProxyType <ProxyAccessType>]
- [<CommonParameters>]
+Connect-SfB [-AdminDomain <String>] [-Timeout <Int32>] [-ProxyType <ProxyAccessType>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,6 +35,8 @@ This function uses New-PSSession or New-CsOnlineSession to connect to Skype for 
 or Skype for Business Online.
 The resulting PS Session is then imported and makes cmdlets available in the current session.
 The Timeout and ProxyType parameters are used to configure the PSSessionOption with respective values.
+
+This function requires the MicrosoftTeams Module: https://www.powershellgallery.com/packages/MicrosoftTeams/1.1.6
 
 ## EXAMPLES
 
@@ -56,24 +57,9 @@ Parameter Sets: Server
 Aliases:
 
 Required: True
-Position: 1
+Position: Named
 Default value: None
 Accept pipeline input: True (ByPropertyName)
-Accept wildcard characters: False
-```
-
-### -Online
-Specify the Online switch to connect to SfB Online using the SkypeOnlineConnector module
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: Online
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -101,7 +87,7 @@ Parameter Sets: Server
 Aliases:
 
 Required: False
-Position: 1
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False

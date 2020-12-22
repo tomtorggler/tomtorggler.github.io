@@ -1,8 +1,8 @@
 ---
 author: tto
 category: TAK
-date: 2020-12-21
-excerpt: 'Get the SID for an account name'
+date: 2020-12-22
+excerpt: 'Get the SID for an account name.'
 external help file: tak-help.xml
 layout: post
 Module Name: TAK
@@ -15,7 +15,7 @@ title: ConvertTo-SID
 # ConvertTo-SID
 
 ## SYNOPSIS
-Get the SID for an account name
+Get the SID for an account name.
 
 ## SYNTAX
 

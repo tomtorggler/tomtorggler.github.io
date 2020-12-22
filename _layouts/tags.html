@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="centerwrapper">
+    <div class="container">
+        <h1 class="pagetitle"># {{ page.title | escape }}</h1>
+        <div class="tagcontainer">
+            {% for post in site.tags[page.title] %}
+                <div class="postlist borderl">
+                    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                    {%- include post-meta.html -%}
+                    {{ post.excerpt }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div> 

@@ -1,8 +1,8 @@
 ---
 author: tto
 category: TAK
-date: 2020-12-21
-excerpt: 'Remove an entry from local hosts file by it's IP address.'
+date: 2020-12-22
+excerpt: 'Remove an entry from local hosts file by its IP address.'
 external help file: tak-help.xml
 layout: post
 Module Name: TAK
@@ -15,7 +15,7 @@ title: Remove-EtcHostsEntry
 # Remove-EtcHostsEntry
 
 ## SYNOPSIS
-Remove an entry from local hosts file by it's IP address.
+Remove an entry from local hosts file by its IP address.
 
 ## SYNTAX
 
