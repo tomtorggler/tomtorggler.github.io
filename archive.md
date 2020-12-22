@@ -1,12 +1,12 @@
 ---
-title: Posts.
-layout: pagewt
+title: Archive.
+layout: page
 ---
 
 <div class="postlist">
 {%- for post in site.posts -%}
     <div class="item">
-        <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         {%- include post-meta.html -%}
         {{ post.excerpt }}
         <p style="text-align: center"> · </p>

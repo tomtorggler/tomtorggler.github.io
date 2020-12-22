@@ -3,13 +3,10 @@
         "title": "Home",
         "url": "/"
     },{
-        "title": "Posts",
-        "url": "/post"
+        "title": "Tags",
+        "url": "/Tags"
     },{
         "title": "PowerShell",
         "url": "/PowerShell"
-    },{
-        "title": "Tags",
-        "url": "/Tags"
     }
 ]

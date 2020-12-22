@@ -35,6 +35,17 @@ html {
     flex-direction: column;
 }
 
+li {
+    list-style: none;
+}
+
+li:before {
+    content: "#";
+    font-family: "Source Serif Pro", serif;
+    width: 1.1em;
+    display: inline-block;
+}
+
 .topnav {
     top: 0;
     left: 0;
@@ -161,12 +172,14 @@ svg {
     padding: 1em;
 }
 
-.tagslist {
-    list-style: none;
-}
-
-.tagnumber{
+.tag-count {
     font-family: "SourceCodePro", monospace;
-    margin-right: 2em;
-    float: right;
+    font-size: smaller;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: #808080;
+    color: #000000;
+    margin-left: 1em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
 }
