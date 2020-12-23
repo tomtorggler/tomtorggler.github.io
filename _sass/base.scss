@@ -183,3 +183,8 @@ svg {
     padding-left: 0.3em;
     padding-right: 0.3em;
 }
+
+.meta-tag:before {
+    display: inline-block;
+    content: "|";
+}
