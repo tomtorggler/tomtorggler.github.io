@@ -89,6 +89,18 @@ li:before {
     display: block;
 }
 
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 18px;
+    }
+    .container {
+        margin-top: $spacing-unit * 1.5;
+    }
+    .centerwrapper {
+        max-width: 546px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     html {
         font-size: 22px;
@@ -97,11 +109,11 @@ li:before {
         margin-top: $spacing-unit * 1.5;
     }
     .centerwrapper {
-        max-width: 85%;
+        max-width: 664px;
     }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 992px) {
     html {
         font-size: 24px;
     }
@@ -109,7 +121,7 @@ li:before {
         margin-top: $spacing-unit * 1.5;
     }
     .centerwrapper {
-        max-width: 924px;
+        max-width: 740px;
     }
 }
 
