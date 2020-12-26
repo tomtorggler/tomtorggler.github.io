@@ -139,7 +139,6 @@ li:before {
     }
 }
 
-
 button {
     all: initial;
     fill: var(--global-foreground);
@@ -149,7 +148,6 @@ button {
 svg {
     display: inline-block;
     color: inherit;
-    padding-right: 5px;
     vertical-align: text-top;
 }
 
@@ -228,3 +226,9 @@ a[href^="http://"]:not([href*="io.tomt.it"]):after,
 a[href^="https://"]:not([href*="io.tomt.it"]):after{
     content: "↗" 
 }
+
+
+.footer {
+    font-family: $body-font;
+    font-size: $small-font-size;
+  }

@@ -5,9 +5,14 @@ layout: default
 <div class="centerwrapper">
   <div class="container">
     <article>
-    <h1 class="pagetitle">{{ page.title | escape }}</h1>
-    {%- include post-meta.html -%}
-    {{ content }}
+    <header>
+      <h1 class="pagetitle" itemprop="name headline">{{ page.title | escape }}</h1>
+    </header>
+    <div itemprop="articleBody">
+      {%- include post-meta.html -%}
+      {{ content }}
+    </div>
+    {%- include revision.html -%}
     </article>
   </div>
 </div>
