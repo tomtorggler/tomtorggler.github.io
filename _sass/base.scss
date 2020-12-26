@@ -113,17 +113,20 @@ li:before {
     }
 }
 
-.postlist a, h1, h2 {
+.postlist {
     color: var(--global-foreground);
     background-color: var(--global-background);
     font-family: $title-font;
     text-decoration: none;
+    a {
+        color: var(--global-foreground)
+    }
+    a:hover {
+        color: var(--global-background);
+        background-color: var(--global-foreground);
+    }
 }
 
-.postlist a:hover {
-    color: var(--global-background);
-    background-color: var(--global-foreground);
-}
 
 button {
     all: initial;
@@ -191,7 +194,8 @@ svg {
     border-radius: 5px;
     background-color: var(--accent-color);
     color: var(--global-background);
-    margin-left: 1em;
+    opacity: 70%;
+    margin-left: 0.3em;
     padding-left: 0.3em;
     padding-right: 0.3em;
 }
@@ -206,4 +210,9 @@ svg {
 }
 [aria-pressed="true"] {
     fill: var(--accent-color);
+}
+
+a[href^="http://"]:not([href*="io.tomt.it"]):after,
+a[href^="https://"]:not([href*="io.tomt.it"]):after{
+    content: "↗" 
 }

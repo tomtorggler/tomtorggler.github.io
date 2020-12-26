@@ -15,8 +15,8 @@ self.addEventListener("install", function (event) {
           '/offline',
           '/assets/main.css',
           '/assets/theme.js',
-          '/about',
-          '/post'
+          '/Tags',
+          '/PowerShell'
         ]
       );
     })
