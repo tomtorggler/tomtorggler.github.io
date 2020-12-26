@@ -22,8 +22,9 @@ html {
     //transition: all 200ms;
     a {
         color: var(--accent-color);
+        text-decoration: none;
     }
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $body-font;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
        -moz-font-feature-settings: "kern" 1;
@@ -33,6 +34,9 @@ html {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    strong {
+        font-weight: bolder;
+    }
 }
 
 li {
@@ -41,8 +45,8 @@ li {
 
 li:before {
     content: "#";
-    font-family: "Source Serif Pro", serif;
-    width: 1.1em;
+    width: 0.75em;
+    font-family: $title-font;
     display: inline-block;
 }
 
@@ -54,24 +58,21 @@ li:before {
     overflow: hidden;
     width: 100%;
     z-index: 1;
-}
-
-.topnav a {
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    float: left;
-    color: var(--global-foreground);
-    background-color: var(--global-background);
-}
-
-.topnav a:hover {
-    color: var(--global-background);
-    background-color: var(--global-foreground);
-}
-
-.topnav a.active {
-    text-decoration: underline;
+    a {
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        float: left;
+        color: var(--global-foreground);
+        background-color: var(--global-background);
+    }
+    a:hover {
+        color: var(--global-background);
+        background-color: var(--global-foreground);
+    }
+    a.active {
+        font-weight: bold;
+    }
 }
 
 .centerwrapper {
@@ -82,14 +83,17 @@ li:before {
 }
 
 .container {
+    margin-top: $spacing-unit * 0.75;
     padding: 10px;
-    margin-top: 75px;
     display: block;
 }
 
 @media screen and (min-width: 768px) {
     html {
         font-size: 22px;
+    }
+    .container {
+        margin-top: $spacing-unit * 1.5;
     }
     .centerwrapper {
         max-width: 85%;
@@ -100,6 +104,9 @@ li:before {
     html {
         font-size: 24px;
     }
+    .container {
+        margin-top: $spacing-unit * 1.5;
+    }
     .centerwrapper {
         max-width: 924px;
     }
@@ -108,7 +115,7 @@ li:before {
 .postlist a, h1, h2 {
     color: var(--global-foreground);
     background-color: var(--global-background);
-    font-family: 'Source Serif Pro', serif;
+    font-family: $title-font;
     text-decoration: none;
 }
 
@@ -119,8 +126,6 @@ li:before {
 
 button {
     all: initial;
-    font-family: inherit;
-    font-size: inherit;
     fill: var(--global-foreground);
     cursor: pointer;
 }
@@ -134,7 +139,7 @@ svg {
 
 .themewrapper {
     float: right;
-    padding: 10px;
+    padding-top: 5px;
 }
 
 .navwrapper {
@@ -142,25 +147,32 @@ svg {
 }
 
 .post-meta {
-    font-family: SourceCodePro, monospace;
+    font-family: $code-font;
     font-size: $small-font-size;
 }
 
 .gridcontainer {
-    margin-top: $spacing-unit / 2;
+    margin-top: $spacing-unit;
     margin-bottom: $spacing-unit / 2;
     @include display-grid;
     
     @media screen and (min-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    h1, h2 {
+        margin-top: initial;
+    }
 }
 
 .tagscontainer {
-    margin-top: $spacing-unit / 2;
+    margin-top: $spacing-unit;
     margin-bottom: $spacing-unit / 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    a {
+        text-decoration: none;
+    }
     @media screen and (min-width: 768px) {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -173,9 +185,8 @@ svg {
 }
 
 .tag-count {
-    font-family: "SourceCodePro", monospace;
+    font-family: $code-font;
     font-size: smaller;
-    font-weight: bolder;
     border-radius: 5px;
     background-color: #808080;
     color: #000000;

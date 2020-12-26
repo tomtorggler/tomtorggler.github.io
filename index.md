@@ -1,9 +1,9 @@
 ---
-title: Home.
-layout: pagewt
+title: Welcome.
+layout: page
 ---
 
-**{{ site.title }}** is the personal website of Tom Torggler.
+**{{ site.title }}** is the personal website of Tom Torggler. 
 
 # Tags.
 

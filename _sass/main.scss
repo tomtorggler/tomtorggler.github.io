@@ -1,14 +1,16 @@
 @charset "utf-8";
 
-$spacing-unit:     48px;
-$base-font-family: 'Source Sans 3', -apple-system, "Segoe UI", Roboto, sans-serif;
-$base-font-size:   18px;
+$spacing-unit: 48px;
+$body-font: 'Source Sans 3', sans-serif;
+$title-font: 'Source Serif Pro', 'serif';
+$code-font: 'SourceCodePro', 'monospace';
+$base-font-size: 18px;
 $base-font-weight: 300;
-$small-font-size:  $base-font-size * 0.8;
+$small-font-size: $base-font-size * 0.8;
 $base-line-height: 1.8;
-$grey-color:       #828282;
+$grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark: darken($grey-color, 25%);
 
 @mixin relative-font-size($ratio) {
     font-size: $base-font-size * $ratio;
@@ -17,7 +19,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 @mixin display-grid {
     display: grid;
     grid-template-rows: auto;
-    grid-gap: 1.5em;   
+    grid-gap: 1.5em;
 }
 
 @import "base";
