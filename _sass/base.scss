@@ -1,19 +1,21 @@
 :root {
-    --global-foreground: #f1f1f1;
-    --global-background: #0f0f0f;
-    --accent-color: #d0adf0;
+    --global-foreground: #ffffff;
+    --global-background: #171717;
+    --accent-color: #4db2ff;
 }
 
 @media (prefers-color-scheme: light) {
     :root:not([data-theme="dark"]) {
-        --global-background: #f1f1f1;
-        --global-foreground: #0f0f0f;
+        --global-background: #ffffff;
+        --global-foreground: #171717;
+        --accent-color: #0065b3;
     }
 }
 
 :root[data-theme="light"] {
-    --global-foreground: #0f0f0f;
-    --global-background: #f1f1f1;
+    --global-foreground: #171717;
+    --global-background: #ffffff;
+    --accent-color: #0065b3;
 }
 
 html {
@@ -127,7 +129,7 @@ button {
 
 svg {
     display: inline-block;
-    fill: var(--global-foreground);
+    color: inherit;
     padding-right: 5px;
     vertical-align: text-top;
 }
@@ -187,4 +189,11 @@ svg {
 .meta-tag:before {
     display: inline-block;
     content: "|";
+}
+
+[aria-pressed="false"] {
+    fill: var(--global-foreground);
+}
+[aria-pressed="true"] {
+    fill: var(--accent-color);
 }
