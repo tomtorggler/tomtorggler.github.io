@@ -21,11 +21,6 @@
 html {
     background-color: var(--global-background);
     color: var(--global-foreground);
-    //transition: all 200ms;
-    a {
-        color: var(--accent-color);
-        text-decoration: none;
-    }
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $body-font;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
@@ -36,6 +31,10 @@ html {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    a {
+        color: var(--accent-color);
+        text-decoration: none;
+    }
     strong {
         font-weight: bolder;
     }
@@ -73,7 +72,7 @@ li:before {
         background-color: var(--global-foreground);
     }
     a.active {
-        font-weight: bold;
+        font-weight: bolder;
     }
 }
 
@@ -190,8 +189,8 @@ svg {
     font-family: $code-font;
     font-size: smaller;
     border-radius: 5px;
-    background-color: #808080;
-    color: #000000;
+    background-color: var(--accent-color);
+    color: var(--global-background);
     margin-left: 1em;
     padding-left: 0.3em;
     padding-right: 0.3em;
