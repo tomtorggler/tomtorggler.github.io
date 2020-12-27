@@ -22,7 +22,7 @@ layout: none
   "background_color": "#0f0f0f",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#f1f1f1",
+  "theme_color": "#171717",
   "shortcuts": [
     {
       "name": "PowerShell",
