@@ -9,7 +9,7 @@ Just like the old site, this site is **free**. There are no trackers, no ads, no
 
 # Popular Tags.
 
-Since 2009 we have written {{ site.posts.size }} posts. You can browse our more popular topics below or find all tags [here](/Tags).
+Since 2009 we have written {{ site.posts.size }} posts. You can browse our more popular topics below or find [all tags](/Tags) in the menu above.
 
 {% assign tags_max = 0 %}
 {% for tag in site.tags %}
