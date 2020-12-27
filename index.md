@@ -3,7 +3,7 @@ title: Welcome.
 layout: page
 ---
 
-**{{ site.title }}** is the personal website of Tom Torggler. I am an itpro and consultant with over 13 years of experience. That does means I am starting to get old &mdash; it does not mean I am loosing interest in technology. This site contains new content as well as the complete archives of ntsystems.it, which was a blog I co-wrote with my good friend and colleague [Daniel](https://twitter.com/nitz_d). 
+**{{ site.title }}** is the personal website of Tom Torggler. I am an itpro and consultant with over 13 years of experience. That means I am starting to get old &mdash; it does not mean I am loosing interest in technology. This site contains new content as well as the complete archives of ntsystems.it, which was a blog I co-wrote with my good friend and colleague [Daniel](https://twitter.com/nitz_d). 
 
 Just like the old site, this site is **free**. There are no trackers, no ads, no cookies. However, we do store the name of the theme you choose in your browser's local storage and we use a service worker to store pages you visited in your browser's cache storage. That makes the site [installable](https://web.dev/discover-installable/), fast, and it will continue to work even if you're offline.
 
