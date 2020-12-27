@@ -69,8 +69,8 @@ li:before {
     fill: var(--accent-color);
 }
 
-a[href^="http://"]:not([href*="io.tomt.it"]):after,
-a[href^="https://"]:not([href*="io.tomt.it"]):after{
+a[href^="http://"]:not([href*="onprem.wtf"]):after,
+a[href^="https://"]:not([href*="onprem.wtf"]):after{
     content: "↗" 
 }
 
