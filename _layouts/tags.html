@@ -2,15 +2,13 @@
 layout: default
 ---
 
-<div class="centerwrapper">
-    <div class="container">
-        <h1 class="pagetitle"># {{ page.title | escape }}</h1>
-        {% for post in site.tags[page.title] %}
-            <div class="postlist">
-                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-                {%- include post-meta.html -%}
-                {{ post.excerpt }}
-            </div>
-        {% endfor %}
-    </div>
-</div> 
+<div class="container">
+    <h1 class="pagetitle">All posts with tag #{{ page.title | escape }}</h1>
+    {% for post in site.tags[page.title] %}
+        <div class="postlist">
+            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+            {%- include post-meta.html -%}
+            {{ post.excerpt }}
+        </div>
+    {% endfor %}
+</div>

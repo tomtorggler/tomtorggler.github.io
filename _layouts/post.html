@@ -2,17 +2,15 @@
 layout: default
 ---
 
-<div class="centerwrapper">
-  <div class="container">
-    <article>
-    <header>
-      <h1 class="pagetitle" itemprop="name headline">{{ page.title | escape }}</h1>
-    </header>
-    <div itemprop="articleBody">
-      {%- include post-meta.html -%}
-      {{ content }}
-    </div>
-    {%- include revision.html -%}
-    </article>
+<div class="container">
+  <article>
+  <header>
+    <h1 class="pagetitle" itemprop="name headline">{{ page.title | escape }}</h1>
+  </header>
+    {%- include post-meta.html -%}
+  <div itemprop="articleBody">
+    {{ content }}
   </div>
+  {%- include revision.html -%}
+  </article>
 </div>

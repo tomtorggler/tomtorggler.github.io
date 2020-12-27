@@ -1,7 +1,7 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
     vertical-align: baseline;
 }
 
- /**
+/**
 * Set `margin-bottom` to maintain vertical rhythm
 */
 h1, h2, h3, h4, h5, h6,
@@ -20,24 +20,6 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
-}
-
-@font-face{
-    font-family: 'Source Sans 3';
-    font-weight: 200;
-    font-style: normal;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/TTF/SourceSans3-ExtraLight.ttf.woff2') format('woff2'),
-         url('/assets/WOFF/OTF/SourceSans3-ExtraLight.otf.woff') format('woff');
-}
-
-@font-face{
-    font-family: 'Source Sans 3';
-    font-weight: 200;
-    font-style: italic;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/TTF/SourceSans3-ExtraLightIt.ttf.woff2') format('woff2'),
-         url('/assets/WOFF/OTF/SourceSans3-ExtraLightIt.otf.woff') format('woff');
 }
 
 @font-face{
@@ -104,51 +86,6 @@ ul, ol, dl, figure,
 }
 
 @font-face{
-    font-family: 'Source Sans 3';
-    font-weight: 700;
-    font-style: italic;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/TTF/SourceSans3-BoldIt.ttf.woff2') format('woff2'),
-         url('/assets/WOFF/OTF/SourceSans3-BoldIt.otf.woff') format('woff');
-}
-
-@font-face{
-    font-family: 'Source Sans 3';
-    font-weight: 900;
-    font-style: normal;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/TTF/SourceSans3-Black.ttf.woff2') format('woff2'),
-         url('/assets/WOFF/OTF/SourceSans3-Black.otf.woff') format('woff');
-}
-
-@font-face{
-    font-family: 'Source Sans 3';
-    font-weight: 900;
-    font-style: italic;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/TTF/SourceSans3-BlackIt.ttf.woff2') format('woff2'),
-         url('/assets/WOFF/OTF/SourceSans3-BlackIt.otf.woff') format('woff');
-}
-
-@font-face{
-    font-family: 'Source Serif Pro';
-    font-weight: 200;
-    font-style: normal;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/TTF/SourceSerifPro-ExtraLight.ttf.woff2') format('woff2'),
-         url('/assets/WOFF/OTF/SourceSerifPro-ExtraLight.otf.woff') format('woff');
-}
-
-@font-face{
-    font-family: 'Source Serif Pro';
-    font-weight: 200;
-    font-style: italic;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/TTF/SourceSerifPro-ExtraLightIt.ttf.woff2') format('woff2'),
-         url('/assets/WOFF/OTF/SourceSerifPro-ExtraLightIt.otf.woff') format('woff');
-}
-
-@font-face{
     font-family: 'Source Serif Pro';
     font-weight: 300;
     font-style: normal;
@@ -209,48 +146,6 @@ ul, ol, dl, figure,
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSerifPro-Bold.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSerifPro-Bold.otf.woff') format('woff');
-}
-
-@font-face{
-    font-family: 'Source Serif Pro';
-    font-weight: 700;
-    font-style: italic;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/TTF/SourceSerifPro-BoldIt.ttf.woff2') format('woff2'),
-         url('/assets/WOFF/OTF/SourceSerifPro-BoldIt.otf.woff') format('woff');
-}
-
-@font-face{
-    font-family: 'Source Serif Pro';
-    font-weight: 900;
-    font-style: normal;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/TTF/SourceSerifPro-Black.ttf.woff2') format('woff2'),
-         url('/assets/WOFF/OTF/SourceSerifPro-Black.otf.woff') format('woff');
-}
-
-@font-face{
-    font-family: 'Source Serif Pro';
-    font-weight: 900;
-    font-style: italic;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/TTF/SourceSerifPro-BlackIt.ttf.woff2') format('woff2'),
-         url('/assets/WOFF/OTF/SourceSerifPro-BlackIt.otf.woff') format('woff');
-}
-@font-face{
-    font-family: 'SourceCodePro';
-    font-weight: 200;
-    font-style: normal;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/OTF/SourceCodePro-ExtraLight.OTF.woff2') format('woff2');
-}
-
-@font-face{
-    font-family: 'SourceCodePro';
-    font-weight: 200;
-    font-style: italic;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/OTF/SourceCodePro-ExtraLightIt.OTF.woff2') format('woff2');
 }
 
 @font-face{
@@ -315,22 +210,6 @@ ul, ol, dl, figure,
     font-style: italic;
     font-stretch: normal;
     src: url('/assets/WOFF2/OTF/SourceCodePro-BoldIt.otf.woff2') format('woff2');
-}
-
-@font-face{
-    font-family: 'SourceCodePro';
-    font-weight: 900;
-    font-style: normal;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/OTF/SourceCodePro-Black.otf.woff2') format('woff2');
-}
-
-@font-face{
-    font-family: 'SourceCodePro';
-    font-weight: 900;
-    font-style: italic;
-    font-stretch: normal;
-    src: url('/assets/WOFF2/OTF/SourceCodePro-BlackIt.otf.woff2') format('woff2');
 }
 
 h1, h2, h3, h4, h5, h6 {

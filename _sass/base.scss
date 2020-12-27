@@ -40,6 +40,17 @@ html {
     }
 }
 
+body {
+    margin-left:auto;
+    margin-right:auto;
+    width: 100%;
+    max-width: 95%;
+    min-height: 100%;
+    position: relative; 
+    -webkit-font-smoothing: subpixel-antialiased; 
+    @extend %clearfix;
+}
+
 li {
     list-style: none;
 }
@@ -49,6 +60,34 @@ li:before {
     width: 0.75em;
     font-family: $title-font;
     display: inline-block;
+}
+
+[aria-pressed="false"] {
+    fill: var(--global-foreground);
+}
+[aria-pressed="true"] {
+    fill: var(--accent-color);
+}
+
+a[href^="http://"]:not([href*="io.tomt.it"]):after,
+a[href^="https://"]:not([href*="io.tomt.it"]):after{
+    content: "↗" 
+}
+
+button {
+    all: initial;
+    fill: var(--global-foreground);
+    cursor: pointer;
+}
+
+svg {
+    display: inline-block;
+    color: inherit;
+    vertical-align: text-top;
+}
+
+img,figure {
+    max-width: 100%;
 }
 
 .topnav {
@@ -76,16 +115,8 @@ li:before {
     }
 }
 
-.centerwrapper {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 95%;
-    @extend %clearfix;
-}
-
 .container {
-    margin-top: $spacing-unit * 0.75;
-    padding: 10px;
+    margin-top: $spacing-unit;
     display: block;
 }
 
@@ -94,9 +125,9 @@ li:before {
         font-size: 18px;
     }
     .container {
-        margin-top: $spacing-unit * 1.5;
+        margin-top: $spacing-unit * 2;
     }
-    .centerwrapper {
+    body {
         max-width: 546px;
     }
 }
@@ -106,9 +137,9 @@ li:before {
         font-size: 22px;
     }
     .container {
-        margin-top: $spacing-unit * 1.5;
+        margin-top: $spacing-unit * 2;
     }
-    .centerwrapper {
+    body {
         max-width: 664px;
     }
 }
@@ -118,9 +149,9 @@ li:before {
         font-size: 24px;
     }
     .container {
-        margin-top: $spacing-unit * 1.5;
+        margin-top: $spacing-unit * 2;
     }
-    .centerwrapper {
+    body {
         max-width: 740px;
     }
 }
@@ -139,30 +170,20 @@ li:before {
     }
 }
 
-button {
-    all: initial;
-    fill: var(--global-foreground);
-    cursor: pointer;
-}
-
-svg {
-    display: inline-block;
-    color: inherit;
-    vertical-align: text-top;
-}
-
 .themewrapper {
     float: right;
     padding-top: 5px;
-}
-
-.navwrapper {
-    float: left;
+    button {
+        margin-right: 0.5rem;
+    }
 }
 
 .post-meta {
     font-family: $code-font;
     font-size: $small-font-size;
+}
+.improve {
+    border-top: 1px solid var(--accent-color);
 }
 
 .gridcontainer {
@@ -170,7 +191,7 @@ svg {
     margin-bottom: $spacing-unit / 2;
     @include display-grid;
     
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 576px) {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -186,9 +207,17 @@ svg {
     grid-template-columns: repeat(2, 1fr);
     a {
         text-decoration: none;
+        color: var(--global-foreground);
     }
-    @media screen and (min-width: 768px) {
+    li {
+        margin-right: 4vw;
+        border-bottom: 1px solid var(--accent-color);
+    }
+    @media screen and (min-width: 576px) {
         grid-template-columns: repeat(3, 1fr);
+        li {
+            margin-right: 2rem;
+        }
     }
 }
 
@@ -200,14 +229,7 @@ svg {
 
 .tag-count {
     font-family: $code-font;
-    font-size: smaller;
-    border-radius: 5px;
-    background-color: var(--accent-color);
-    color: var(--global-background);
-    opacity: 70%;
-    margin-left: 0.3em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    float: right;
 }
 
 .meta-tag:before {
@@ -215,20 +237,7 @@ svg {
     content: "|";
 }
 
-[aria-pressed="false"] {
-    fill: var(--global-foreground);
-}
-[aria-pressed="true"] {
-    fill: var(--accent-color);
-}
-
-a[href^="http://"]:not([href*="io.tomt.it"]):after,
-a[href^="https://"]:not([href*="io.tomt.it"]):after{
-    content: "↗" 
-}
-
-
 .footer {
     font-family: $body-font;
     font-size: $small-font-size;
-  }
+}
