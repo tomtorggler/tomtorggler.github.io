@@ -71,7 +71,7 @@ li:before {
 
 a[href^="http://"]:not([href*="onprem.wtf"]):after,
 a[href^="https://"]:not([href*="onprem.wtf"]):after{
-    content: "↗" 
+    content: "↗"; 
 }
 
 button {
