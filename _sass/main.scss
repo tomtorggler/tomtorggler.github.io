@@ -4,13 +4,11 @@ $spacing-unit: 2.4rem;
 $body-font: 'Source Sans 3', sans-serif;
 $title-font: 'Source Serif Pro', 'serif';
 $code-font: 'SourceCodePro', 'monospace';
-$base-font-size: 18px;
+$base-font-size: 17px;
 $base-font-weight: 300;
-$small-font-size: $base-font-size * 0.8;
+$small-font-size: $base-font-size * 0.85;
 $base-line-height: 1.8;
-$grey-color: #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark: darken($grey-color, 25%);
+
 
 @mixin relative-font-size($ratio) {
     font-size: $base-font-size * $ratio;

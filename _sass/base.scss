@@ -44,7 +44,7 @@ body {
     margin-left:auto;
     margin-right:auto;
     width: 100%;
-    max-width: 95%;
+    max-width: 96%;
     min-height: 100%;
     position: relative; 
     -webkit-font-smoothing: subpixel-antialiased; 
@@ -124,7 +124,7 @@ img,figure {
 
 @media screen and (min-width: 576px) {
     html {
-        font-size: 18px;
+        font-size: 17px;
     }
     .container {
         margin-top: $spacing-unit * 2;
@@ -136,7 +136,7 @@ img,figure {
 
 @media screen and (min-width: 768px) {
     html {
-        font-size: 22px;
+        font-size: 21px;
     }
     .container {
         margin-top: $spacing-unit * 2;
@@ -148,7 +148,7 @@ img,figure {
 
 @media screen and (min-width: 992px) {
     html {
-        font-size: 24px;
+        font-size: 23px;
     }
     .container {
         margin-top: $spacing-unit * 2;
@@ -207,19 +207,17 @@ img,figure {
     margin-bottom: $spacing-unit / 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.25rem;
+    row-gap: 0.5rem;
     a {
         text-decoration: none;
         color: var(--global-foreground);
     }
     li {
-        margin-right: 4vw;
         border-bottom: 1px solid var(--accent-color);
     }
     @media screen and (min-width: 576px) {
         grid-template-columns: repeat(3, 1fr);
-        li {
-            margin-right: 2rem;
-        }
     }
 }
 
