@@ -1,0 +1,23 @@
+---
+layout: post
+title: "So long, 2020."
+date: 2020-12-29
+author: tto
+tags:
+  - Test
+category: blog
+blog: true
+---
+
+
+# Personal
+
+I moved to Amsterdam in March. Spent most of the rest of the year in my new home office. And this is not complaining. For me 2020 was a good year. I learned a lot. 
+
+Since a certain global event made traveling impossible, or at least not very recommendable, I stayed in Amsterdam and as I had some free time, I started building this new site.
+
+Goodbye ntSystems.it
+
+# Welcome onprem.wtf
+
+This is my new personal website. And blog. And playground. 
