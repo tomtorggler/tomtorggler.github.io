@@ -4,20 +4,17 @@ title: "So long, 2020."
 date: 2020-12-29
 author: tto
 tags:
-  - Test
+  - ntSystems
+  - Jekyll
 category: blog
 blog: true
 ---
 
 
-# Personal
+True, I had to cancel some trips and I stayed home a lot more than usual, but apart from that, it was a pretty spectacular year. I moved to Amsterdam from a smaller city just outside of it. I went to Marbella, Sardinia, Napoli, and other places. In a prolonged episode of lockdown blues I was even able to do about 1000 km on my road bike. I learned a lot. 
 
-I moved to Amsterdam in March. Spent most of the rest of the year in my new home office. And this is not complaining. For me 2020 was a good year. I learned a lot. 
-
-Since a certain global event made traveling impossible, or at least not very recommendable, I stayed in Amsterdam and as I had some free time, I started building this new site.
+Since a certain global event made traveling impossible, or at least not very recommendable, I stayed in Amsterdam for the holiday season and started building this new site.
 
 Goodbye ntSystems.it
 
-# Welcome onprem.wtf
-
-This is my new personal website. And blog. And playground. 
+Welcome **onprem.wtf**
