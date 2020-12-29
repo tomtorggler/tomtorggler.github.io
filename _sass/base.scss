@@ -230,3 +230,13 @@ img,figure {
     display: inline-block;
     content: "|";
 }
+
+.improve {
+  border-top: 1px solid var(--accent-color);
+}
+
+.footer {
+  font-family: $body-font;
+  font-size: $small-font-size;
+}
+
