@@ -7,7 +7,7 @@ layout: page
   <input placeholder="Type here&hellip;" type="search" id="search-box" name="query" class="search-input">
 </form>
 
-<div id="search-results"></div>
+<div id="search-results" class="post-list"></div>
 
 <script>
   window.store = {

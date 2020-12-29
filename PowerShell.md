@@ -7,8 +7,8 @@ layout: pagewt
 
 <div class="gridcontainer">
     {%- for post in site.Modules -%}
-    <div class="borderl">
-        <h2 class="postlist"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <div class="post-list borderl">
+        <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         {{ post.excerpt }}
     </div>
     {%- endfor -%}
@@ -18,8 +18,8 @@ layout: pagewt
 
 <div class="gridcontainer">
     {%- for post in site.Scripts -%}
-    <div class="borderl">
-        <h2 class="postlist"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <div class="post-list borderl">
+        <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         {{ post.excerpt }}
     </div>
     {%- endfor -%}
