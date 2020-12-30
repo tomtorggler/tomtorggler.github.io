@@ -209,7 +209,7 @@ img,figure {
     li {
         border-bottom: 1px solid var(--accent-color);
     }
-    @media screen and (min-width: 300px) {
+    @media screen and (min-width: 340px) {
         grid-template-columns: repeat(2, 1fr);
     }
     @media screen and (min-width: 576px) {
