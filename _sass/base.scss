@@ -44,7 +44,6 @@ body {
     min-height: 100%;
     position: relative; 
     -webkit-font-smoothing: subpixel-antialiased; 
-    @extend %clearfix;
 }
 
 a {
@@ -230,13 +229,3 @@ img,figure {
     display: inline-block;
     content: "|";
 }
-
-.improve {
-    border-top: 1px solid var(--accent-color);
-  }
-  
-  .footer {
-    font-family: $body-font;
-    font-size: $small-font-size;
-  }
-  

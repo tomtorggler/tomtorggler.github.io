@@ -20,20 +20,7 @@ $base-line-height: 1.8;
     grid-gap: 1.5em;
 }
 
-/**
- * Reset some basic elements
- */
- h1, h2, h3, h4, h5, h6,
- p, blockquote, pre, hr,
- dl, dd, ol, ul, figure {
-     margin: 0;
-     padding: 0;
-     border: 0;
-     font-size: 100%;
-     font: inherit;
-     vertical-align: baseline;
- }
- 
+
 /**
 * Set `margin-bottom` to maintain vertical rhythm
 */
