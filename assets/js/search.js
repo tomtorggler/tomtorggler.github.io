@@ -7,13 +7,13 @@
 
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var item = store[results[i].ref];
-        appendString += '<h2 class="postlist"><a href="' + item.url + '">' + item.title + '</a></h2>';
+        appendString += '<h2 class="post-title"><a href="' + item.url + '">' + item.title + '</a></h2>';
         appendString += '<p>' + item.content.substring(0, 150) + '...</p>';
       }
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<div>No results found.</div>';
+      searchResults.innerHTML = '<h2>No results found.</h2>';
     }
   }
 

@@ -2,6 +2,7 @@
     --global-foreground: #ffffff;
     --global-background: #171717;
     --accent-color: #4db2ff;
+    --grey-color: #333333;
 }
 
 @media (prefers-color-scheme: light) {
@@ -9,6 +10,7 @@
         --global-background: #ffffff;
         --global-foreground: #171717;
         --accent-color: #0065b3;
+        --grey-color: #333333;
     }
 }
 
@@ -16,6 +18,7 @@
     --global-foreground: #171717;
     --global-background: #ffffff;
     --accent-color: #0065b3;
+    --grey-color: #cccccc;
 }
 
 html {
@@ -31,13 +34,6 @@ html {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    a {
-        color: var(--accent-color);
-        text-decoration: none;
-    }
-    strong {
-        font-weight: bolder;
-    }
 }
 
 body {
@@ -49,6 +45,20 @@ body {
     position: relative; 
     -webkit-font-smoothing: subpixel-antialiased; 
     @extend %clearfix;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a[href^="http://"]:not([href*="onprem.wtf"]):after,
+a[href^="https://"]:not([href*="onprem.wtf"]):after{
+    content: "↗"; 
+}
+
+strong {
+    font-weight: bolder;
 }
 
 li {
@@ -69,11 +79,6 @@ li:before {
     fill: var(--accent-color);
 }
 
-a[href^="http://"]:not([href*="onprem.wtf"]):after,
-a[href^="https://"]:not([href*="onprem.wtf"]):after{
-    content: "↗"; 
-}
-
 button {
     all: initial;
     fill: var(--global-foreground);
@@ -88,6 +93,33 @@ svg {
 
 img,figure {
     max-width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 17px;
+    }
+    body {
+        max-width: 546px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 21px;
+    }
+    body {
+        max-width: 664px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 23px;
+    }
+    body {
+        max-width: 740px;
+    }
 }
 
 .topnav {
@@ -122,51 +154,16 @@ img,figure {
     display: block;
 }
 
-@media screen and (min-width: 576px) {
-    html {
-        font-size: 17px;
+.post-list {
+    h2 {
+        margin-bottom: $spacing-unit / 3;
     }
-    .container {
-        margin-top: $spacing-unit * 2;
+    h2 a {
+        color: var(--global-foreground);
+        background-color: var(--global-background);
+        font-family: $title-font;    
     }
-    body {
-        max-width: 546px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    html {
-        font-size: 21px;
-    }
-    .container {
-        margin-top: $spacing-unit * 2;
-    }
-    body {
-        max-width: 664px;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    html {
-        font-size: 23px;
-    }
-    .container {
-        margin-top: $spacing-unit * 2;
-    }
-    body {
-        max-width: 740px;
-    }
-}
-
-.postlist {
-    color: var(--global-foreground);
-    background-color: var(--global-background);
-    font-family: $title-font;
-    text-decoration: none;
-    a {
-        color: var(--global-foreground)
-    }
-    a:hover {
+    h2 a:hover {
         color: var(--global-background);
         background-color: var(--global-foreground);
     }
@@ -183,9 +180,6 @@ img,figure {
 .post-meta {
     font-family: $code-font;
     font-size: $small-font-size;
-}
-.improve {
-    border-top: 1px solid var(--accent-color);
 }
 
 .gridcontainer {
@@ -237,7 +231,12 @@ img,figure {
     content: "|";
 }
 
-.footer {
-    font-family: $body-font;
-    font-size: $small-font-size;
+.improve {
+  border-top: 1px solid var(--accent-color);
 }
+
+.footer {
+  font-family: $body-font;
+  font-size: $small-font-size;
+}
+

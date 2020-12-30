@@ -1,0 +1,24 @@
+.search-input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-family: $body-font;
+  font-weight: $base-font-weight;
+  font-size: 1.2rem;
+  background-color: var(--global-background);
+  color: var(--global-foreground);
+  border: 1px solid var(--accent-color);
+  border-radius: 3px;
+  padding: .3rem;
+  width: 100%;
+}
+
+.alert-info {
+  border-radius: .3rem;
+  background: var(--grey-color);
+  padding: .3rem .5rem;
+  p {
+    margin-bottom: initial;
+  }
+}
+
