@@ -212,19 +212,28 @@
 }
 
 /**
- * Reset some basic elements
- */
- h1, h2, h3, h4, h5, h6,
- p, blockquote, pre, hr,
- dl, dd, ol, ul, figure {
-     margin: 0;
-     padding: 0;
-     border: 0;
-     font-size: 100%;
-     font: inherit;
-     vertical-align: baseline;
- }
- 
+* Reset some basic elements
+*/
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/**
+* Set `margin-bottom` to maintain vertical rhythm
+*/
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: $spacing-unit;
@@ -238,7 +247,6 @@ h1 {
 h2 {
     font-size: 1.15rem;
 }
-
 
 /**
 * Code formatting
@@ -268,4 +276,3 @@ pre {
         padding-left: 0;
     }
 }
-
