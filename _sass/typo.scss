@@ -5,7 +5,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSans3-Light.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSans3-Light.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -15,7 +15,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSans3-LightIt.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSans3-LightIt.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -25,7 +25,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSans3-Regular.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSans3-Regular.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -35,7 +35,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSans3-It.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSans3-It.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -45,7 +45,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSans3-Semibold.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSans3-Semibold.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -55,7 +55,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSans3-SemiboldIt.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSans3-SemiboldIt.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -65,7 +65,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSans3-Bold.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSans3-Bold.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -75,7 +75,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSerifPro-Light.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSerifPro-Light.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -85,7 +85,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSerifPro-LightIt.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSerifPro-LightIt.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -95,7 +95,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSerifPro-Regular.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSerifPro-Regular.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -105,7 +105,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSerifPro-It.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSerifPro-It.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -115,7 +115,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSerifPro-Semibold.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSerifPro-Semibold.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -125,7 +125,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSerifPro-SemiboldIt.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSerifPro-SemiboldIt.otf.woff') format('woff');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -135,7 +135,7 @@
     font-stretch: normal;
     src: url('/assets/WOFF2/TTF/SourceSerifPro-Bold.ttf.woff2') format('woff2'),
          url('/assets/WOFF/OTF/SourceSerifPro-Bold.otf.woff') format('woff');
-         font-display: optional;
+         font-display: fallback;
 }
 
 @font-face{
@@ -144,7 +144,7 @@
     font-style: normal;
     font-stretch: normal;
     src: url('/assets/WOFF2/OTF/SourceCodePro-Light.otf.woff2') format('woff2');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -153,7 +153,7 @@
     font-style: italic;
     font-stretch: normal;
     src: url('/assets/WOFF2/OTF/SourceCodePro-LightIt.otf.woff2') format('woff2');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -162,7 +162,7 @@
     font-style: normal;
     font-stretch: normal;
     src: url('/assets/WOFF2/OTF/SourceCodePro-Regular.otf.woff2') format('woff2');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -171,7 +171,7 @@
     font-style: italic;
     font-stretch: normal;
     src: url('/assets/WOFF2/OTF/SourceCodePro-It.otf.woff2') format('woff2');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -180,7 +180,7 @@
     font-style: normal;
     font-stretch: normal;
     src: url('/assets/WOFF2/OTF/SourceCodePro-Semibold.otf.woff2') format('woff2');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -189,7 +189,7 @@
     font-style: italic;
     font-stretch: normal;
     src: url('/assets/WOFF2/OTF/SourceCodePro-SemiboldIt.otf.woff2') format('woff2');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -198,7 +198,7 @@
     font-style: normal;
     font-stretch: normal;
     src: url('/assets/WOFF2/OTF/SourceCodePro-Bold.otf.woff2') format('woff2');
-    font-display: optional;
+    font-display: fallback;
 }
 
 @font-face{
@@ -207,7 +207,7 @@
     font-style: italic;
     font-stretch: normal;
     src: url('/assets/WOFF2/OTF/SourceCodePro-BoldIt.otf.woff2') format('woff2');
-    font-display: optional;
+    font-display: fallback;
 }
 
 /**
