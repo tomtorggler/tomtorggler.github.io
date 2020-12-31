@@ -1,7 +1,7 @@
 
 .highlight  { 
     overflow-x: auto; 
-    @extend %vertical-rhythm;
+    margin-bottom: $spacing-unit / 2;
 }
 .highlight .hll { background-color: #404040 }
 .highlight .c { color: #e0e0e0; font-style: italic } /* Comment */
