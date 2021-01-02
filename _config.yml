@@ -1,16 +1,15 @@
 # Welcome to Jekyll!
 #
-title: onprem.wtf
+title: tom's playground
 email: tom@onprem.wtf
 description: >- # this means to ignore newlines until "baseurl:"
   The personal website of Tom Torggler.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://onprem.wtf" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 language: en
 twitter_username: torggler
 github_username:  tomtorggler
 
-permalink: /post/:title
 highlighter: rouge
 markdown: kramdown
 kramdown:
@@ -25,22 +24,6 @@ plugins:
   - jekyll-seo
   - jekyll-redirect-from
 
-collections:
-  Scripts:
-    output: true
-    permalink: "/PowerShell/:title/"
-    excerpt_separator: <!-- more -->
-  Modules:
-    output: true
-    permalink: "/PowerShell/:title/"
-    excerpt_separator: <!-- more -->
-  OnlineHelp:
-    output: true
-    permalink: "/PowerShell/:title/"
-    excerpt_separator: <!-- more -->
-  my_tags:
-    output: true
-
 defaults:
   -
     scope:
@@ -49,11 +32,3 @@ defaults:
       excerpt_separator: <!-- more -->
       hidden: false
       language: en
-  -
-    scope:
-      path: ""
-      type: "my_tags"
-    values:
-      permalink: "/Tags/:title"
-      layout: "tags"
-
